@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Photoshop - Web Editor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Mini Photoshop</h2>
+        
+        <div class="editor-layout">
+            <!-- Удирдлагын хэсэг -->
+            <div class="controls">
+                <input type="file" id="upload" accept="image/*">
+                
+                <div class="filter-group">
+                    <label>Brightness (Гэрэл)</label>
+                    <input type="range" id="brightness" min="0" max="200" value="100">
+                    
+                    <label>Contrast (Тод байдал)</label>
+                    <input type="range" id="contrast" min="0" max="200" value="100">
+                    
+                    <label>Blur (Бүдэгсгэх)</label>
+                    <input type="range" id="blur" min="0" max="10" value="0">
+                </div>
+
+                <button id="download">Зургийг хадгалах</button>
+            </div>
+
+            <!-- Зургийн талбар -->
+            <div class="canvas-area">
+                <canvas id="canvas"></canvas>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
