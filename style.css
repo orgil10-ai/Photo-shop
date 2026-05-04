@@ -1,0 +1,48 @@
+body {
+    background-color: #1e1e1e;
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+}
+
+.editor-layout {
+    display: flex;
+    gap: 20px;
+    background: #2d2d2d;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.controls {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.filter-group label {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+canvas {
+    max-width: 100%;
+    border: 1px solid #444;
+}
+
+button {
+    background: #0078d4;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
